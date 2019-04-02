@@ -1,0 +1,15 @@
+LIST TO TEAR THROUGH!!!!
+  and make GitHub Files!!
+{}{}{}{}{}{}{}{}{}{}{}{}{}
+    https://codelabs.developers.google.com/codelabs/firestore-web/#0
+    https://firebase.google.com/docs/firestore/data-model
+    ++ https://firebase.google.com/docs/firestore/manage-data/add-data ++
+    https://firebase.google.com/docs/firestore/query-data/get-data
+    https://firebase.google.com/docs/firestore/query-data/queries
+    https://firebase.google.com/docs/firestore/query-data/order-limit-data
+
+
+DONE!
+1-  https://firebase.google.com/docs/firestore/manage-data/add-data
+    https://github.com/1-nty/Firebase/blob/master/AddingData.js
+    
