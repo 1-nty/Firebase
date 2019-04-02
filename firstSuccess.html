@@ -1,0 +1,41 @@
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-functions.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-storage.js"></script>
+
+
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyATWS5_Je48icmSgLZmAwnh23yePk1YssU",
+    authDomain: "local-fragment-236319.firebaseapp.com",
+    databaseURL: "https://local-fragment-236319.firebaseio.com",
+    projectId: "local-fragment-236319",
+    storageBucket: "local-fragment-236319.appspot.com",
+    messagingSenderId: "871998615208"
+  };
+  firebase.initializeApp(config);
+  
+  var db = firebase.firestore();
+  db.collection("newCollection").add({
+    json:"Object",
+    just:"ForRepeatitence",
+    justa:"jsonObject"
+  })
+  
+  .then(function(docRef){
+    console.log("Document written with ID: ", docRef.id);
+  })
+  .catch(function(error){
+    console.error("Error adding document: ", error);
+  })
+
+
+
+
+
+</script>
