@@ -1,6 +1,6 @@
 var db = firebase.firestore();
 var obj = new Object
-// add simple
+// add simple with auto-generated document name
 db.collection("newOrExistingCollection").add(obj)
 
 // add complex
