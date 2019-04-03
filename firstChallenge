@@ -1,10 +1,16 @@
-
 <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-firestore.js"></script>
 
 <script>
+  // Def Custom Functions
+  function updateAllInCollection(collection,updateObject){
+    db.collection(String(collection)).get().then(function(querySnapshot){
+      querySnapshot.forEach(function(doc){
+        doc.ref.update(updateObject)
+      });
+    })
+  }
   // Initialize Firebase
-  // get config options from firebase.google.com!!
   var config = {
     apiKey: "api key",
     authDomain: "authDomain",
@@ -18,28 +24,26 @@
   var moviesRef = db.collection("movieWithComments")
 /* ********** STARTS HERE *************/
 
-  //update all movies with comment array = ['hey','nice','yo']
-  
-  
+  //update all movies with filmViewer array = ['jeremy','mike','foo']
+  updateAllInCollection("movieWithComments",{filmViewer:['jeremy','mike','foo']})
   // search a data base and retrieve two
-  
+  var twoMovies = moviesRef.get().metadata
   
   // print it out to screen
-  
+  /*var jsonData = JSON.stringify(twoMovies)
+  document.write(jsonData)*/
+  document.write(twoMovies)
   
   
   
   
 </script>
 
-//
 
 
 
 
-// something like this to print
-<script>
-  var something = new Object
-  var jsonData = JSON.stringify(something)
-  document.write(jsonData)
-</script>
+
+
+
+
