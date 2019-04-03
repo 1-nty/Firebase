@@ -1,0 +1,14 @@
+db.collection()
+	CollectionReference
+.get()
+	Promise<QuerySnapshot>
+.forEach()
+	QueryDocumentSnapshot
+		.ref = DocumentReference
+.data() || .get()
+	.data()
+		DocumentData
+	.get()
+		any
+Update()
+	DocumentReference
