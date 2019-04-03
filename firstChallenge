@@ -1,0 +1,44 @@
+
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-firestore.js"></script>
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyATWS5_Je48icmSgLZmAwnh23yePk1YssU",
+    authDomain: "local-fragment-236319.firebaseapp.com",
+    databaseURL: "https://local-fragment-236319.firebaseio.com",
+    projectId: "local-fragment-236319",
+    storageBucket: "local-fragment-236319.appspot.com",
+    messagingSenderId: "871998615208"
+  };
+  firebase.initializeApp(config);
+  var db = firebase.firestore();
+  var moviesRef = db.collection("movieWithComments")
+/* ********** STARTS HERE *************/
+
+  //update all movies with comment array = ['hey','nice','yo']
+  
+  
+  // search a data base and retrieve two
+  
+  
+  // print it out to screen
+  
+  
+  
+  
+  
+</script>
+
+
+
+
+
+
+// something like this to print
+<script>
+  var something = new Object
+  var jsonData = JSON.stringify(something)
+  document.write(jsonData)
+</script>
